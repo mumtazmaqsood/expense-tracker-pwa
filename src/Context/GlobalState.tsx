@@ -5,22 +5,15 @@ import {AppReducer} from './AppReducer'
 
 /* const intialState:any */
 const intialState: any = {
-    transcations : [
-        /*
-        { transid: 1, item: 'Salary', amount: 50000 },
-        { transid: 2, item: 'Books', amount: -500 },
-        { transid: 3, item: 'Grocery', amount: -1000 },
-        { transid: 4, item: 'Savings', amount: 2000 },
-    */
-    ]
+    transcations : [ ]
 }
 
-type contextProps = {
+/* type contextProps = {
     transactions: transcationType[]
     addTranscation: (trans: transcationType)=>void,
     delTranscation: (id: number)=>void
 }
-
+ */
 
 export const GlobalContext = createContext<any>(intialState);
 
