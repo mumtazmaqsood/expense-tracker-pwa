@@ -37,6 +37,9 @@ jobs:
         
       - name: Build Expense Tracker App
         run: yarn build
+      
+      - name: Installing Surge
+        run: yarn install --global surge
         
       - name: Deploy on Surge
         run: surge ./build http://expense-tracker-pwa1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
