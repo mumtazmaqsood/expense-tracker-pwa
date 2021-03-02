@@ -21,7 +21,7 @@ function App() {
   return (
     <GlobalProvider>
     <div className="App">
-       Testing Code from github
+       Testing Code from github and firebase 
       <Header />
       <div className="container">
         <Balance />
