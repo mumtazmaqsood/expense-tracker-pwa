@@ -35,10 +35,10 @@ jobs:
           cmd: install
                
       - name: Build Expense Tracker App
-        run: yarn build
+        run: sudo npm run build
     
       - name: Install Surge
-        run: npm install --global surge
+        run: sudo npm install --global surge
       
       - name: Run Surge
         run: surge ./build http://expense-tracker-pwa1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
