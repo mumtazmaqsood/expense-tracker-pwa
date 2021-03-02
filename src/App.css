@@ -1,38 +1,142 @@
-.App {
+
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px 5px grey;  
+  border: 2px solid green;
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 1px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin:0;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  text-align: center;
+}
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inc-exp-container {
+  background-color: #bbb;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  box-shadow: 10px 10px grey;
+  
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.money_plus {
+  color: green;
+  font-weight: bold;
+}
+
+.money_minus {
+  color: red;
+  font-weight: bold;
+}
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: 10px 10px 5px grey;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #b6960a;
+}
+
+.list li.plus:hover {
+  border-right: 5px solid #b6960a;
+  background-color: #b6960a;
+  color: #f7f7f7
+}
+
+.list li.minus {
+  border-right: 5px solid #2da3ad;
+}
+
+.list li.minus:hover {
+  border-right: 5px solid #2da3ad;
+  background-color: #2da3ad;
+  color: #f7f7f7
+}
+
+.delete-btn {
+ color: red; 
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  
+}
+
+
+.btn {
+  cursor: pointer;
+  background-color: lightseagreen;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 105%;
+  font-weight: bold;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 5px;
 }
