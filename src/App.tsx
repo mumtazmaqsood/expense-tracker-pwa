@@ -12,11 +12,12 @@ import { TranscationHistory } from './Components/TranscationHistory';
 import { AddTranscation } from './Components/AddTranscation';
 import { GlobalProvider } from './Context/GlobalState';
 
-
+import {initNotification} from './Services/FirebaseService';
 
 
 function App() {
 
+  initNotification();
   
   return (
     <GlobalProvider>
