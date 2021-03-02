@@ -25,21 +25,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install NodeJs
+      # Runs a single command using the runners shell
+      - name: Installing Nodejs
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-        
-      - name: install yarn 
-        uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install
-        
+               
       - name: Build Expense Tracker App
-        run: yarn build
+        run: sudo npm run build
+    
+      - name: Install Surge
+        run: sudo npm install --global surge
       
-      - name: Installing Surge
-        run: yarn install --global surge
-        
-      - name: Deploy on Surge
+      - name: Run Surge
         run: surge ./build http://expense-tracker-pwa1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
