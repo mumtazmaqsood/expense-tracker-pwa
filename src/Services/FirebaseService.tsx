@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+ import firebase from 'firebase';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDFT08slpXE82uoq89xI1lyAUywwt4NQE0",
@@ -40,3 +40,4 @@ export const initNotification = ()=> {
 }
 
 
+ 

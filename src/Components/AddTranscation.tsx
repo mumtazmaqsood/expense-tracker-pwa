@@ -42,7 +42,7 @@ export const AddTranscation:React.FC<any> = () => {
                 </div>
 
                 <div className="form-control">
-                    <label htmlFor="transcationamount">Transcation Amount</label>
+                    <label htmlFor="transcationamount">Transcation Amount:(- Debit or + Credit )</label>
                     <input type="number" 
                     id="transcationamount"
                     value = {transcationAmount} 
